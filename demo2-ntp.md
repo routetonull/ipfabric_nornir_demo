@@ -1,6 +1,5 @@
 '''
-
-AUTOMATION DEMO
+# AUTOMATION DEMO
 
 Demo script:
 - get list of hosts from IP FABRIC using Nornir and a custom inventory plugins
