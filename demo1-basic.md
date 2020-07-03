@@ -76,4 +76,4 @@ Filter only PaloAlto firewalls of site HWLAB:
     HWLABpaloalto = nr.filter(siteName="HWLAB").filter(vendor="paloalto")
     HWLABpaloalto.inventory.hosts
 
-Verify on GUI applying the same filter.
+Verify on IPFABRIC GUI applying the same filter, the devices in list should match.
