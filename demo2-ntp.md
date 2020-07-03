@@ -8,12 +8,12 @@ Demo script:
 - fix wrong NTP configurations using Nornir
 
 Requirements:
-- ipfapi (https://github.com/ipfabric/ipfapi)
+- ipfapi (https://github.com/ipfabric/integration-examples/tree/master/python-api-demo)
 - setup as described in README.md
 
 Get IP Fabric API
 
-    wget https://raw.githubusercontent.com/ipfabric/ipfapi/master/ipfapi.py
+    wget https://raw.githubusercontent.com/ipfabric/integration-examples/master/python-api-demo/ipfapidemo.py
 
 '''
 
@@ -21,7 +21,7 @@ Get IP Fabric API
 
 ## Authenticate and get devices missing NTP configuration (no NTP sources)
 
-from ipfapi import tokenRequest, getData
+from ipfapidemo import tokenRequest, getData
 import os
 
 server = os.environ.get("IPF_URL", "https://localhost")
