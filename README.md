@@ -1,5 +1,12 @@
-# ipfabric_nornir_demo
-inventory module for nornir and tutorials
+# IP FABRIC NORNIR DEMO
+
+A plugin for nornir to collect the inventory from IP Fabric.
+
+Requires an IP Fabric appliance with some devices in the inventory.
+
+More information about IP Fabric: [https://ipfabric.io/](https://ipfabric.io/)
+
+For more examples and code the discussion in [https://networktocode.slack.com/](https://networktocode.slack.com/) in the IP FABRIC channel.
 
 ## SETUP
 
