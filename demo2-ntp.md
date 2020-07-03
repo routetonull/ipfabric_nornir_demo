@@ -3,17 +3,17 @@
 AUTOMATION DEMO
 
 Demo script:
-- get list of hosts from IPF using Nornir and a custom inventory plugins
-- get NTP configuration of devices in a site using IPF API
+- get list of hosts from IP FABRIC using Nornir and a custom inventory plugins
+- get NTP configuration of devices in a site using IP FABRIC API
 - fix wrong NTP configurations using Nornir
 
 Requirements:
-- ipfapi (https://github.com/ipfabric/integration-examples/tree/master/python-api-demo)
-- setup as described in README.md
+- ipfapidemo.py 
+- initial setup as described in README.md
 
 Get IP Fabric API
 
-    wget https://raw.githubusercontent.com/ipfabric/integration-examples/master/python-api-demo/ipfapidemo.py
+    wget https://raw.githubusercontent.com/darenfulwell/ipfabric/master/demos/ipfapidemo.py
 
 '''
 
@@ -95,5 +95,5 @@ Now connect to the device and verify NTP configuration is fixed
 '''
 
 '''
-BONUS: refresh host data from IP Fabric and run again this demo, notice the list of hosts with missing sources is empty now.
+BONUS: refresh host data from IP Fabric and run again this demo, notice the list of hosts missing sources is empty now.
 '''
