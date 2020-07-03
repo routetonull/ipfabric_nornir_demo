@@ -1,14 +1,6 @@
-'''    _   _   _ _____ ___  __  __    _  _____ ___ ___  _   _
-   / \ | | | |_   _/ _ \|  \/  |  / \|_   _|_ _/ _ \| \ | |
-  / _ \| | | | | || | | | |\/| | / _ \ | |  | | | | |  \| |
- / ___ \ |_| | | || |_| | |  | |/ ___ \| |  | | |_| | |\  |
-/_/   \_\___/  |_| \___/|_|  |_/_/   \_\_| |___\___/|_| \_|
+'''
 
- ____  _____ __  __  ___
-|  _ \| ____|  \/  |/ _ \
-| | | |  _| | |\/| | | | |
-| |_| | |___| |  | | |_| |
-|____/|_____|_|  |_|\___/
+AUTOMATION DEMO
 
 Demo script:
 - get list of hosts from IPF using Nornir and a custom inventory plugins
@@ -26,7 +18,6 @@ Get IP Fabric API
 '''
 
 # CODE
-
 
 ## Authenticate and get devices missing NTP configuration (no NTP sources)
 
