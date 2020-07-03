@@ -1,3 +1,5 @@
+# REQUIREMENTS
+
 Setup the environment as described on README.MD
 
 ## INVENTORY PLUGIN
@@ -20,7 +22,7 @@ Import inventory from IP Fabric
         },
     )
 
-Alternate method: provide url and credentials in code
+Another authenticatio option is to provide url and credentials in code instead of env vars
 
     from nornir import InitNornir
     nr = InitNornir(
@@ -41,11 +43,11 @@ Alternate method: provide url and credentials in code
 
 ## NORNIR INVENTORY BASICS
 
-List all hosts imported by the plugin:
+List all hosts imported by the plugin
 
     nr.inventory.hosts
 
-Count the hosts:
+Count the hosts in the inventory
 
     len(nr.inventory.hosts)
 
@@ -57,7 +59,7 @@ Verify a single host:
 
 ## NORNIR INVENTORY FILTERING
 
-Example of using Nornir filtering capabilities applied to attributes imported by IP Fabric like siteName and vendor.
+Example of using Nornir filtering capabilities applied to attributes imported by IP Fabric like *siteName* and *vendor*. More details in [nornir documentation](https://nornir.readthedocs.io/).
 
 Filter hosts of a particular site:
 
@@ -76,4 +78,4 @@ Filter only PaloAlto firewalls of site HWLAB:
     HWLABpaloalto = nr.filter(siteName="HWLAB").filter(vendor="paloalto")
     HWLABpaloalto.inventory.hosts
 
-Verify on IPFABRIC GUI applying the same filter, the devices in list should match.
+Verify on IP FABRIC GUI applying the same filter, the devices in list should match.
