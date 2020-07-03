@@ -7,7 +7,7 @@ Install nornir
 
     pip3 install nornir
 
-Copy ipfabric.py to nornir inventory path (modify based on the Python version)
+Copy ipfabric.py to nornir inventory path (modify based on the Python version running on your machine)
 
     cp ipfabric.py /usr/local/lib/python3.6/dist-packages/nornir/plugins/inventory/
 
