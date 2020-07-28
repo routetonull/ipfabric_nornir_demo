@@ -65,7 +65,7 @@ class IPFInventory(Inventory):
         )
 
         if not r.status_code == 200:
-            raise ValueError(f"Failed to get devices from IP Fabric {ipf_url}")
+            raise ValueError(f"{r.status_code} Failed to get devices from IP Fabric {ipf_url}")
 
         ipf_devices = json.loads(r.content).get("data")
 
@@ -125,7 +125,10 @@ class IPFInventory(Inventory):
             host["data"]["version"] = d.get("version")
             host["data"]["siteName"] = d.get("siteName")
 
-            hosts[d.get("hostname") or d.get("id")] = host
+            if kwargs.get('appendIPhostname',None):
+                hosts[f'{d.get("hostname")}_{d.get("loginIp")}' or d.get("id")] = host
+            else:
+                hosts[d.get("hostname") or d.get("id")] = host
 
             groups[d.get("siteName")] = {}
             groups[d.get("platform")] = {}
